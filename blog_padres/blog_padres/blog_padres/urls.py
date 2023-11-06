@@ -16,7 +16,9 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from control_talleres_padres.views import prueba_html
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('prueba/', prueba_html),
 ]
