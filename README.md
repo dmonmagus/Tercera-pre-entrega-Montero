@@ -14,3 +14,11 @@ Se genera aplicacion control_talleres_padres
 Se realiza check y makemigration y migrate
 Se hace nuevo commit
 Se inician montaje y pruebas de plantillas en folder templates_base
+Se descarga plantilla de bootstrap y se crean folders en carpeta static
+se modifican parametros en settings.py del static
+se copia contenido del html descargado a nuestro base html
+se hacen pruebas y se ve que no carga los styles ni imagenes
+se realiza correcion de direcciones de url en html base para decirle que estan las fuentes en la carpeta static
+Nuevo add , commit y push para agregar las carpetas y modificaciones de proyecto
+Se hace adecuaciones de diseño en el archivo base.html y se hacen pruebas
+Se inicia trabajos para la herencia de html se crea archivo padre.html que se utilizara como fuente de las herencias
