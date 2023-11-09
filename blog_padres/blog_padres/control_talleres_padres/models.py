@@ -10,11 +10,9 @@ class Prospecto(models.Model):
     nombre = models.CharField(max_length=256)
     email = models.EmailField(blank=True)
     telefono = models.CharField(max_length=20, blank=True)
-    fecha_nacimiento = models.DateField(null=True)
 
 class Inscrito(models.Model):
     apellido = models.CharField(max_length=256)
     nombre = models.CharField(max_length=256)
     email = models.EmailField(blank=True)
-    fecha_nacimiento = models.DateField(null=True, blank=True)
     objetivo = models.TextField(blank=True)

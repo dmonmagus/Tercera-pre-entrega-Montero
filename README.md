@@ -22,3 +22,7 @@ se realiza correcion de direcciones de url en html base para decirle que estan l
 Nuevo add , commit y push para agregar las carpetas y modificaciones de proyecto
 Se hace adecuaciones de diseño en el archivo base.html y se hacen pruebas
 Se inicia trabajos para la herencia de html se crea archivo padre.html que se utilizara como fuente de las herencias
+Se inician trabajos para captura de forms la primera prueba es correcta
+Se hacen pruebas para los modelos de Prospectos e Inscritos pero no carga captura
+Se encuentra que la probable causa es la fecha de nacimiento por lo que se anula captura de este dato, se hacen pruebas operando correctamente
+Se hacen pruebas con estas condiciones y la funcionalidad es adecuada se hace nuevo add y commit
