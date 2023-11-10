@@ -1,0 +1,25 @@
+{% extends "padre.html" %}
+{% load static %}
+{% block contenidoQueCambia %}
+        <p>Resultados de busqueda:</p>
+        {% if prospectos %}
+        <table class="table">
+            <tbody>
+                <tr>
+                    <th>ID</th>
+                    <th>Nombre</th>
+                    <th>Apellido</th>
+                </tr>
+                {% for prospecto in prospectos %}
+                <tr>
+                    <th>{{ prospecto.id }}</th>
+                    <th>{{ prospecto.nombre }}</th>
+                    <th>{{ prospecto.apellido }}</th>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        {% else %}
+        <p>No hay datos</p>
+        {% endif%}
+{% endblock %}

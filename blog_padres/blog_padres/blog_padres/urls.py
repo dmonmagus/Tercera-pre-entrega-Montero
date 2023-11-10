@@ -24,4 +24,6 @@ urlpatterns = [
     path('talleres', views.talleres, name= "Talleres"),
     path('Prospectos', views.prospectos, name="Prospectos"),
     path('Inscritos', views.Inscritos, name="Inscritos"),
+    path('buscar_prospectos', views.buscar_prospectos, name="buscar_prospectos"),
+    path('control_talleres_padres/buscar/', views.buscar),
     ]

@@ -26,3 +26,7 @@ Se inician trabajos para captura de forms la primera prueba es correcta
 Se hacen pruebas para los modelos de Prospectos e Inscritos pero no carga captura
 Se encuentra que la probable causa es la fecha de nacimiento por lo que se anula captura de este dato, se hacen pruebas operando correctamente
 Se hacen pruebas con estas condiciones y la funcionalidad es adecuada se hace nuevo add y commit
+Se hacen pruebas con el metodo de busqueda
+Se tienen varias fallas se cambia el metodo a Post
+Queda operando correctamente se estiliza con tabla
+Queda listo se hace ultimo commit para su entrega y revision

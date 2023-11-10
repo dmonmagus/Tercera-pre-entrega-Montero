@@ -1,5 +1,6 @@
 from django.shortcuts import render, redirect
-from django.urls import reverse
+from django.urls import reverse 
+from django.http import HttpResponse
 from control_talleres_padres import models
 from control_talleres_padres import forms
 
@@ -74,5 +75,20 @@ def Inscritos(request):
             context={'formulario': formulario}
             )
         return http_response 
+def buscar_prospectos(request):
+    return render(request, template_name='busqueda_prospectos.html')
+
+def buscar(request):
+    if request.method == "POST":
+        data=request.POST
+        busqueda = data["busqueda"]
+        prospectos = models.Prospecto.objects.filter(nombre__contains=busqueda)
+        contexto = {
+            "prospectos": prospectos,
+            }
+        return render(request, template_name='resultadosBusqueda.html',context=contexto,)
+    else:
+        respuesta = "No enviaste datos"
+        return HttpResponse(respuesta)
     
-    
+
